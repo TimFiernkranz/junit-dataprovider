@@ -88,7 +88,7 @@ public class DataProvidersTest {
         Object[] result = $$(new Object[] { "test1", 1 }, new Object[] { "test2" }, new Object[] { "test3", 3 });
 
         // Then:
-        assertThat(result).isEqualTo(new Object[][] { { "20", 10 }, { "test2" }, { "test3", 3 } });
+        assertThat(result).isEqualTo(new Object[][] { { "test1", 1  }, { "test2" }, { "test3", 3 } });
     }
 
     @Test
